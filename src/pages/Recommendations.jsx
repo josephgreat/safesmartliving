@@ -71,7 +71,7 @@ const Recommendations = () => {
     <Box>
       <Container maxW="unset" m="0" p="4" pos="relative" overflow={"hidden"}>
         <Box
-          bg="url(/images/recommendations.jpg) no-repeat center"
+          bg="url(/images/recommendations.jpg) no-repeat center #003366"
           filter={"brightness(.5) "}
           bgSize="cover"
           pos="absolute"

@@ -13,7 +13,7 @@ const Jumbotron = () => {
       backdropFilter={"blur(5px)"}
     >
       <Box
-        bg={"url('/images/smarthomebg.jpeg') no-repeat center "}
+        bg={"url('/images/smarthomebg.jpeg') no-repeat center #003366 "}
         bgSize={"cover"}
         // opacity={".4"}
         pos="absolute"
@@ -44,7 +44,7 @@ const Jumbotron = () => {
           </Text>
         </Box>
         <Box w={{ md: "30%" }} display={{ base: "none", md: "block" }}>
-          <Img src="/images/smarthome.png" />
+          <Img src="/images/smarthome.png" alt="smarthome image" />
         </Box>
       </Flex>
     </Container>
