@@ -19,8 +19,8 @@ const Vulnerabilities = () => {
     <Box>
       <Container maxW="unset" m="0" p="4" pos="relative" overflow={"hidden"}>
         <Box
-          bg="url(/images/threats.jpg) no-repeat center"
-          filter={"brightness(.5) blur(3px)"}
+          bg="url(/images/vulnerabilities.webp) no-repeat center"
+          filter={"brightness(.5)"}
           bgSize="cover"
           pos="absolute"
           inset="-1"
@@ -37,8 +37,10 @@ const Vulnerabilities = () => {
             color={"textWhite"}
             as="h2"
             mb="4"
-            fontSize={"clamp(2rem, 10vw, 2.5rem)"}
+            fontSize={"clamp(1.6rem, 9vw, 2.3rem)"}
             textAlign={"center"}
+            textShadow={"0 0 10px black"}
+            
           >
             Vulnerability Assessment and Common Vulnerabilities in Smart IoT
             Devices at Home

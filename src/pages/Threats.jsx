@@ -34,7 +34,7 @@ const Threats = () => {
       <Container maxW="unset" m="0" p="4" pos="relative" overflow={"hidden"}>
         <Box
           bg="url(/images/threats.jpg) no-repeat center"
-          filter={"brightness(.5) blur(3px)"}
+          filter={"brightness(.5)"}
           bgSize="cover"
           pos="absolute"
           inset="-1"
@@ -51,6 +51,7 @@ const Threats = () => {
             color={"textWhite"}
             as="h2"
             mb="4"
+            textShadow={"0 0 10px black"}
             fontSize={"clamp(2rem, 10vw, 2.5rem)"}
           >
             Threat Modeling
