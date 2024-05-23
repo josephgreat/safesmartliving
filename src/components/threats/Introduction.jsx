@@ -1,13 +1,11 @@
 import React from "react";
 import { Box, Divider, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import H4Heading from "../H4Heading";
 
 function Introduction() {
   return (
     <Box py="6" id="intro">
-      <Heading as="h2" size="lg" mb="4">
-        Introduction to Threat Modeling
-        <Divider borderColor={"primaryTeal"} borderWidth={"2px"} w="5rem" mt="2" />
-      </Heading>
+      <H4Heading text="Introduction" />
 
       <Heading as="h4" size="md" mb="4">
         What is Threat Modeling?

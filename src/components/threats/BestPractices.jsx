@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Heading, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
 import { FaHandPointRight } from "react-icons/fa";
+import H4Heading from "../H4Heading";
 
 function BestPractices() {
   const bestPractices = [
@@ -33,9 +34,7 @@ function BestPractices() {
 
   return (
     <Box py="6" id="practices">
-      <Heading as="h2" size="lg" mb="4">
-        Best Practices
-      </Heading>
+      <H4Heading text="Best Practices" />
       <List spacing="4">
         {bestPractices.map(({ title, description }, index) => (
           <ListItem display={"flex"} gap="2" key={index}>

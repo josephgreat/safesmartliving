@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Heading, ListItem, OrderedList, Text } from "@chakra-ui/react";
+import H4Heading from "../H4Heading";
 
 function CaseStudies() {
   const caseStudies = [
@@ -69,9 +70,7 @@ function CaseStudies() {
 
   return (
     <Box py="6" id="cases">
-      <Heading as="h2" size="lg" mb="4">
-        Case Studies/Examples
-      </Heading>
+      <H4Heading text="Case Studies / Examples" />
       {caseStudies.map(({ title, scenario, steps }, index) => (
         <Box mb="6" key={index}>
           <Heading as="h3" size="md" mb="2">

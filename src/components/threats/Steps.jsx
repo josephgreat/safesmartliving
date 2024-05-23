@@ -14,6 +14,7 @@ import {
   AccordionPanel,
 } from "@chakra-ui/react";
 import { FaHandPointRight } from "react-icons/fa";
+import H4Heading from "../H4Heading";
 
 function Steps() {
   const threatModelingProcess = [
@@ -145,9 +146,8 @@ function Steps() {
 
   return (
     <Box py="6" id="steps">
-      <Heading as="h2" size="lg" mb="4">
-        Steps in the Threat Modeling Process
-      </Heading>
+      <H4Heading text="Steps in the Threat Modeling Process" />
+      
       <Accordion defaultIndex={[0]} allowMultiple>
         {/* <List spacing="4"> */}
 

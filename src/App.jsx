@@ -1,5 +1,5 @@
 import { PageWrapper } from "./components";
-import { LandingPage, Threats } from "./pages";
+import { LandingPage, Threats, Vulnerabilities } from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -11,6 +11,10 @@ function App() {
     {
       path: "/threats",
       element: <PageWrapper Component={Threats} />,
+    },
+    {
+      path: "/vulnerabilities",
+      element: <PageWrapper Component={Vulnerabilities} />,
     },
   ]);
 

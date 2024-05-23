@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Heading, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
 import { FaHandPointRight } from "react-icons/fa";
+import H4Heading from "../H4Heading";
 
 function ToolsAndTechniques() {
   const popularThreatModelingTools = [
@@ -23,9 +24,8 @@ function ToolsAndTechniques() {
 
   return (
     <Box py="6" id="tools">
-      <Heading as="h2" size="lg" mb="4">
-        Tools and Techniques
-      </Heading>
+      <H4Heading text="Tools and Techniques" />
+
       <Heading as="h4" size={"md"} mb="4">
         Popular Threat Modeling Tools:
       </Heading>

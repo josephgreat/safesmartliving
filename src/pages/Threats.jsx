@@ -18,6 +18,7 @@ import {
   Steps,
   ToolsAndTechniques,
 } from "../components/threats";
+import { QuickLinks } from "../components";
 
 const Threats = () => {
   const quickLinks = [
@@ -67,26 +68,7 @@ const Threats = () => {
         gap="4"
         alignItems={"flex-start"}
       >
-        <Box
-          border={"1px solid"}
-          borderColor={""}
-          p="4"
-          my="6"
-          w={{ md: "25%" }}
-        >
-          <Heading as="h4" fontSize={"1.3rem"} mb="4">
-            Quick Links
-          </Heading>
-          <OrderedList>
-            {quickLinks.map(({ title, link }, index) => (
-              <ListItem key={index}>
-                <Link href={link} color="primaryTeal">
-                  {title}
-                </Link>
-              </ListItem>
-            ))}
-          </OrderedList>
-        </Box>
+        <QuickLinks quickLinks={quickLinks} />
         <Box w={{ md: "70%" }} maxH={{ md: "100vh" }} overflow={{ md: "auto" }}>
           <Introduction />
           <Steps />
