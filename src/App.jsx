@@ -1,20 +1,20 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { Container } from "@chakra-ui/react";
-import { Footer, Navbar } from "./components";
-import { LandingPage } from "./pages";
+import { PageWrapper } from "./components";
+import { LandingPage, Threats } from "./pages";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <PageWrapper Component={LandingPage} />,
+    },
+    {
+      path: "/threats",
+      element: <PageWrapper Component={Threats} />,
+    },
+  ]);
 
-  return (
-    <Container color="textGray" maxW={"unset"} p="0" bg="secondaryGray">
-      <Navbar />
-      <LandingPage />
-      <Footer />
-    </Container>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

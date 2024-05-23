@@ -1,8 +1,8 @@
 import LandingPage from "./LandingPage";
+import Threats from "./Threats";
 
 
 
 
 
-
-export {LandingPage}
+export {LandingPage, Threats}

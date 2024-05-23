@@ -9,6 +9,7 @@ import {
 import React, { useState } from "react";
 import { FaHamburger, FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [openLinks, setOpenLinks] = useState(false);
@@ -52,9 +53,9 @@ const Navbar = () => {
           visibility={{base: openLinks ? "visible" : "hidden" , md: "visible"}}
           transition={"height .3s ease"}
         >
-          <Link>Threats</Link>
-          <Link>Vulnerabilities</Link>
-          <Link>Recommendations</Link>
+          <Link as={NavLink} to="/threats">Threats</Link>
+          <Link as={NavLink} to="/vulnerabilities">Vulnerabilities</Link>
+          <Link as={NavLink} to="/recommendations">Recommendations</Link>
         </Flex>
       </Flex>
     </Container>
