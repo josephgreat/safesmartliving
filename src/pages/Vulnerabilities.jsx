@@ -1,7 +1,7 @@
 import { Box, Container, Flex, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
 import {
-    BestPractices,
+  BestPractices,
   CommonVulnerabilities,
   Introduction,
   VulnerabilityAssessment,
@@ -9,12 +9,12 @@ import {
 import { QuickLinks } from "../components";
 
 const Vulnerabilities = () => {
-    const quickLinks = [
-        {title: "Introduction", link: "#intro"},
-        {title: "Common Vulnerabilities", link: "#common_vulnerabilities"},
-        {title: "Vulnerability Assessment", link: "#vulnerability_assessment"},
-        {title: "Best Practices", link: "#practices"},
-    ]
+  const quickLinks = [
+    { title: "Introduction", link: "#intro" },
+    { title: "Common Vulnerabilities", link: "#common_vulnerabilities" },
+    { title: "Vulnerability Assessment", link: "#vulnerability_assessment" },
+    { title: "Best Practices", link: "#practices" },
+  ];
   return (
     <Box>
       <Container maxW="unset" m="0" p="4" pos="relative" overflow={"hidden"}>
@@ -40,7 +40,6 @@ const Vulnerabilities = () => {
             fontSize={"clamp(1.6rem, 9vw, 2.3rem)"}
             textAlign={"center"}
             textShadow={"0 0 10px black"}
-            
           >
             Vulnerability Assessment and Common Vulnerabilities in Smart IoT
             Devices at Home

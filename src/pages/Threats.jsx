@@ -3,11 +3,6 @@ import {
   Container,
   Flex,
   Heading,
-  Link,
-  List,
-  ListIcon,
-  ListItem,
-  OrderedList,
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
